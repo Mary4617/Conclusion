@@ -12,19 +12,18 @@ return elements; }
 
 function f1(x)
 {
-var gg="1234567890";
-fff="Okay";
-var mass1 = x.split('0');
-if(mass1.length==2)
-{
-for(i=5;i<x.length;i++)
-{
-if(gg.indexOf(x.charAt(i))<5)
-fff="Fail";
-}
+var resultTrue ="Okay";
+var resultFalse ="Fail";
+if(x.length){
+if (isNaN(x))
+	return resultFalse;
+else
+	if(x<1000000 && x>9999)
+	return resultTrue;
+else 
+	return resultFalse;
+
 }
 else
-fff="Fail";
-return fff;
-
+return resultFalse;
 }
