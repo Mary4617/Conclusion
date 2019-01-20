@@ -13,10 +13,11 @@ return elements; }
 
 function f1()
 {N=parseFloat($('tt1').value);
-                       K=0;
-                while(N < Math.pow(3,K))
-		       K--;
-                       K++;
+                        K++;
+                        K--;
+                while( Math.pow(3,K)>N)
+		        K=0;
+                      
                       $('tt2').value=K;
                              
 
