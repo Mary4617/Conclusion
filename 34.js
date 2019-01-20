@@ -12,13 +12,12 @@ return elements; }
 
 
 function f1()
-{
-var N=parseInt($('tt1').value);
-var K;
+{N=parseFloat($('tt1').value);
+                       K=0;
+                while(Math.pow(3,K) < N)
+		       K++;
+                       K--;
+                      $('tt2').value=K;
+                             
 
-while(Math.pow(3,K)>N);
-{
-	K++;
-}
-$('tt2').value=K;
-}
+ }
